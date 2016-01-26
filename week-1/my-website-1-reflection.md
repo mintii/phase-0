@@ -13,8 +13,8 @@
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-Checking connectivity... done.
-```
+Checking connectivity... done.```
+
 7. Congrats, you're done! You've just created a repository and cloned it into your local computer. Going back tot he house analogy, this means that you've made a house for everyone to see and work on as well as your own personal house to see and work on. You can add your own windows, red shutters, etc, locally and this won't be updated onto GitHub until you're ready to update it with a few additional commands. 
 Of course, baby steps, we will work on that next. :) 
 
