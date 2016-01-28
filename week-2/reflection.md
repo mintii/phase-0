@@ -1,4 +1,5 @@
-![Alt text](imgs/sitemp.png "Optional title")
+![sitemap](imgs/site-map.PNG)
+
 # 2.3 Reflections
 
 ## 1. What are the 6 Phases of Web Design?
