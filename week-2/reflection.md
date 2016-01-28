@@ -1,4 +1,4 @@
-![sitemap](imgs/site-map.PNG)
+![sitemap](imgs/sitemap.PNG)
 
 # 2.3 Reflections
 
