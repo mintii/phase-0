@@ -10,7 +10,7 @@
 A wireframe is a way of showing the rough, overall design and hierarchy of the web page's information. It can be as quick and rudimentary as a pizza box drawing, or using Illustrator to make something very polished and sophisticated. 
 
 ## What are the benefits of wireframing?
-It's an important step in the design process (a large and crucial step within [The 6 phases of the Website Design](/reflection.md)). Rather than spending lots of time and resources with coding up a website design, people use wireframes in very early stages of design. Its simplicity allows for designers to see where information goes, and how users will interact with the site. 
+It's an important step in the design process (a large and crucial step within [The 6 phases of the Website Design](reflection.md)). Rather than spending lots of time and resources with coding up a website design, people use wireframes in very early stages of design. Its simplicity allows for designers to see where information goes, and how users will interact with the site. 
 
 ## Did you enjoy wireframing your site?
 After lots of searching for inspiration, I went into making the wireframe with not a lot of confidence. I went through a lot of websites and used used [Wirify](http://www.wirify.com/) to turn the website into a wireframe. I found a few designs I liked, and worked on used it to help shape my wireframe.  In the end, I was surprisingly pleased at the results! :) 
