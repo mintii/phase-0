@@ -114,3 +114,27 @@ footer {
 .footer-bold{
 	font-weight:bold;
 }
+
+/*
+1. What is important to know when linking an external file (like a
+stylesheet) to an HTML file? 
+	It's important to add into the <head> of your HTML file the <link rel="stylesheet" href=""> 
+	And within the href you will as in the path to where your CSS is saved. 
+
+2. What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it? 
+	I used Chrome Dev Tools a lot when it came to getting my sizing of my elements. 
+
+3. What CSS did you use to modify the element style (like size, color, etc.)
+	font-size, a lot of margins and padding. I used a mixture of pixels and percentages to help give the page shape. 
+	The Berkshire site was kind of scalable, which wasn't reflecting as well in my page, so I had to use some percentages to resize
+	the page, and pixels in areas that must remain static. 
+
+4. Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add
+to your HTML? 
+	I used exclusively classes for modifying the HTML as well as simply calling upon the element's name in CSS. 
+
+5. When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and
+why?
+	I think mine uses a lot of updated and currently approved practices for creating websites in 2016. The original website's code certainly
+	contains less bulk, but it uses no CSS, only HTML to structure and style the page. This is not something that many recommend in today's use of HTML and CSS. 
+*/
