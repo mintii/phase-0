@@ -1,3 +1,5 @@
+# Reflection 3.4 
+
 ## 1. How can you use Chrome's DevTools inspector to help you format or position elements?
 
 It allows you to see live updates of the page as you edit, add, or remove CSS styling. 
@@ -44,3 +46,23 @@ Another way to think of the three would be to think outside the box(margin), aro
 ## 5. What was your impression of this challenge overall? (love, hate, and why?)
 
 Love. Chrome Dev Tools is a very exciting and power tool to use, and I'm happy we are getting to use this feature for our lessons. 
+
+## My Chrome Dev Tools Challenge
+
+![Columns](chrome-devtools/imgs/columns.png)
+
+![Center](chrome-devtools/imgs/center.png)
+
+![Change-Color](chrome-devtools/imgs/change-color.png)
+
+![Creative](chrome-devtools/imgs/creative.png)
+
+![Equidistant](chrome-devtools/imgs/equidistant.png)
+
+![Margin](chrome-devtools/imgs/margin.png)
+
+![Row](chrome-devtools/imgs/row.png)
+
+![Sidebar](chrome-devtools/imgs/sidebar.png)
+
+![Squares](chrome-devtools/imgs/squares.png)
