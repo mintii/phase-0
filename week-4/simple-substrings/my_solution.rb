@@ -5,15 +5,15 @@
 
 # Your Solution Below
 
-puts "Where do you live?"
-state = gets.chomp
-
-def welcome(state)
-  if state == "CA"
-    puts "Welcome to California!"
+def welcome(phrase)
+  if phrase.include?("CA")
+     "Welcome to California"
   else
-    puts "You should move to California!"
+     "You should move to California"
   end 
 end 
 
-puts welcome(state)
+p welcome("CA banana hello cat tree lkdsfjdcaikdlfjs")
+# Tell me what this method passing this argument will return. 
+#
+
