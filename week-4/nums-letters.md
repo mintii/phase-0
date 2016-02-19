@@ -12,7 +12,7 @@ Integerts are whole numbers that contain no decimal points. Floats are numbers i
 ## What is the difference between float and integer division? How would you explain the difference to someone who doesn't know anything about programming?
 
 How both do calculations are slightly different. Floats will return the full value (generally [Wikipedia Article: 0.999...](https://en.wikipedia.org/wiki/0.999...) ) 
-So if you were to put into ruby `puts 9 / 2` it will surprise you by returning 4. This is because float will round down to the nearest whole number. However, simple adding decimal points to the problem will yield the correct answer of 4.5. 
+So if you were to put into ruby `puts 9 / 2` it will surprise you by returning 4. This is because an integer will round down to the nearest whole number. However, simple adding decimal points to the problem will yield the correct answer of 4.5. 
 
 A simple way to remember the differences between the two is to think about real life scenarios you'd need integers or floats in. 
 
@@ -67,7 +67,7 @@ Please see my answer above on line #12
 
 ## What are strings? Why and when would you use them?
 
-Strings are groups of letters in Ruby. You always know what is a string beause you see it wrapped around single  ` ' ' `or double quotes ` " " `. 
+Strings are groups of characters in Ruby. You always know what is a string beause you see it wrapped around single  ` ' ' `or double quotes ` " " `. 
 
 You can use them for getting a user input or for storing word lists in an array. There are many uses! 
 
