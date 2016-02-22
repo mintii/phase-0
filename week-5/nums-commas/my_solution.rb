@@ -1,16 +1,15 @@
 # Numbers to Commas Solo Challenge
 
-# I spent [] hours on this challenge.
+# I spent [12] hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.
 
 # 0. Pseudocode
-
-# What is the input?
-# What is the output? (i.e. What should the code return?)
-# What are the steps needed to solve the problem?
+# Please check out the links below for my Psuedocode notes
+# https://github.com/mintii/phase-0/blob/master/week-5/nums-commas/psuedocode_page1.png
+# https://github.com/mintii/phase-0/blob/master/week-5/nums-commas/psuedocode_page2.png
 
 
 # 1. Initial Solution
