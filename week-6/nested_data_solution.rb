@@ -1,100 +1,115 @@
-# columns = [0, 1, 2, 3, 4]
-# board = [
-#           [47, 44, 71, 8, 88],  #index 0
-          
-#           [22, 69, 75, 65, 73], #index 1
-        
-#           [83, 85, 97, 89, 57], #index 2
-          
-#           [25, 31, 96, 68, 51], #index 3
-       
-#           [75, 70, 54, 80, 83] #index 4
-#                                 ]
-# apple = columns.to_i
-# p board_b = board[apple][0]
-# p board_i = board[apple][1]
-# p board_n = board[apple][2]
-# p board_g = board[apple][3]
-# p board_o = board[apple][4]
-# p "Bingo!"
+# RELEASE 2: NESTED STRUCTURE GOLF
+# Hole 1
+# Target outer_array: "FORE"
 
-# A Nested Array to Model a Bingo Board SOLO CHALLENGE
+array = [[1,2],["inner", ["eagle", "par", ["FORE", "hook"]]]]
 
-# I spent [#] hours on this challenge.
+# attempts:
+# ============================================================
+# array.each do |e|
+#   if e.kind_of?(Array)
+#     e.each do |second|
+#       if second.kind_of?(Array)
+#         second.each do |third|
+#           if third.kind_of?(Array)
+#             p third[0]
+#           end 
+#         end
+#       end
+#     end
+#   end
+# end
+
+# Refactored code
+# p array[1][1][2][0]
+
+# ============================================================
+
+# Hole 2
+# Target outer_array: "congrats!"
+
+hash = {outer: {inner: {"almost" => {3 => "congrats!"}}}}
+
+# attempts:
+# ============================================================
+# hash.each do |key, value|
+#   value.each do |k,v|
+#     v.each do |x,y|
+#       y.each do |a,b|
+#           puts b
+#         end
+#     end
+#   end
+# end
+
+# ============================================================
 
 
-# Release 0: Pseudocode
-# Outline:
+# Hole 3
+# Target outer_array: "finished"
 
-# Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
-  #fill in the outline here
+nested_data = {array: ["array", {hash: "finished"}]}
 
-# Check the called column for the number called.
-  #fill in the outline here
+# attempts:
+# ============================================================
+# nested_data.each do |key, value|
+#   inner_hash = value[1]
+#   p inner_hash[:hash]
+# end
 
-# If the number is in the column, replace with an 'x'
-  #fill in the outline here
 
-# Display a column to the console
-  #fill in the outline here
+# ============================================================
 
-# Display the board to the console (prettily)
-  #fill in the outline here
+# RELEASE 3: ITERATE OVER NESTED STRUCTURES
 
-# Initial Solution
+# number_array = [5, [10, 15], [20,25,30], 35]
+# number_array.map! do |x| 
+#   if x.kind_of?(Integer)
+#     x + 5
+#   else
+#     x.collect do |second|
+#       second + 5
+#     end
+#   end
+# end
+# p number_array
 
-class BingoBoard
-  attr_accessor :call_number, :appears_on_card
-  
-  def initialize(board)
-    @bingo_board = board
-    @call_number = call_number
-    
-  end
-  
-  def call_number # will run by randomly choosing a letter and number. 
-    letters = ["B", "I", "N", "G", "O"]
-    random_num = rand(1...100)
-    call_letter = letters.sample
-    puts "#{call_letter}#{random_num}"
-  end
-  
-  def appears_on_card
-    p self.board_labels 
-    # p bingo_hash.find { |key, value| value[self.call_number]}
-  end
-  
-  def board_labels
-    bingo_hash= Hash.new
-    counter = 0
-    @bingo_board.each do |row|
-      bingo_hash["B#{counter}"] = row[0]
-      bingo_hash["I#{counter}"] = row[1]
-      bingo_hash["N#{counter}"] = row[2]
-      bingo_hash["G#{counter}"] = row[3]
-      bingo_hash["O#{counter}"] = row[4]
-      counter += 1
+
+
+# Bonus:
+
+startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+
+answer = startup_names.map do |outer_array|
+  if outer_array.kind_of?(String)
+    outer_array.capitalize + 'ly'    
+  elsif outer_array.kind_of?(Array)
+    outer_array.map do |sub_group|
+      if sub_group.kind_of?(String)
+        sub_group.capitalize + 'ly'          
+      elsif sub_group.kind_of?(Array)
+        sub_group.map do |last_group|
+          last_group.capitalize + 'ly'    
+        end
+      end     
     end
-     @bingo_hash = bingo_hash
-  end
-  
-  
-end #end of class
+  end 
+end
 
-# Refactored Solution
+p answer 
 
+# ------ Reflection ------
+# What are some general rules you can apply to nested arrays?
+#   Whatever happens on the outermost array needs to e iterated in some manner with
+#   Unless you want to print just a value, you can probably do it with with brackets
 
+# What are some ways you can iterate over nested arrays?
+#   Using if/else statements based on the type of object the programs should see
+#   Or, iterating through the value and keys within nested hashes. 
 
-#DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
-board = [[47, 44, 71, 8, 88],
-        [22, 69, 75, 65, 73],
-        [83, 85, 97, 89, 57],
-        [25, 31, 96, 68, 51],
-        [75, 70, 54, 80, 83]]
-
-new_game = BingoBoard.new(board)
-new_game.appears_on_card
-# new_game.board_labels
-
-#Reflection
-
+# Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+#   We used .kind_of?() a lot to check for beginnings of a new nested array or hash. 
+#   It's a method I know of previously, but I didn't know what useful purposes
+#   one could use it within a program. It was a good option to use it because 
+#   we needed a way to identify when new array or hashes, and then make specific
+#   actions to them. 
