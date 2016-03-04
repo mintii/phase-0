@@ -15,3 +15,13 @@ number of all the items on a list that has an even length.
  evenLengthArray = [4, 4, 5, 5, 6, 6, 6, 7]
  
  */
+ 
+ /*
+------S U M M A R Y---------
+Our group was sucessful in passing all 9 tests successfully! There was a bit of 
+a mixup with the arrays and where they should be placed in the code for it to 
+even pass the test But they were easily relocated up to the top of the page, and
+that allowed for the code to run and then for the tests to check for completeness. 
+Good job team! :) 
+
+*/
