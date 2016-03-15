@@ -50,19 +50,19 @@ FROM states JOIN regions ON regions.id = states.region_id ORDER BY regions.id AS
 
 Databases are used for storing and retrieving data. It can be used for storing all kinds of different data. 
 
-1. What is a one-to-many relationship?
+2. What is a one-to-many relationship?
 
 It means that you have one type of data that has an unknown number of relationships with others
 For example, you may have a database to store a person's info and the type of car they have. 
 But what if someone has 2 cars, or 20 cars? Then  you form a one-to-many relationship because 
 while one type of data is known, we don't know the quantity of the others. 
 
-1. What is a primary key? What is a foreign key? How can you determine which is which?
+3. What is a primary key? What is a foreign key? How can you determine which is which?
 
 A primary key is used to uniqely identify rows in a database. There is also a foreign key, which 
 refers to a primary key of another entity. 
 
-1. How can you select information out of a SQL database? What are some general guidelines for that?
+4. How can you select information out of a SQL database? What are some general guidelines for that?
 
 The general structure of selecting information in SQL is to use `SELECT * FROM -name_of_table;`
 Just like JavaScript, you want to end your statements with a semi-colon. 
