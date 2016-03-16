@@ -1,12 +1,12 @@
 # One-to-one Relationship
-![one-to-one-relationship](../imgs/one-to-one-relationship.png)
+![one-to-one-relationship](/imgs/one-to-one-relationship.png)
 Thi is a one-to-one relationship because we have one apartment building, and we 
 have one Unit A apartment in this particular building. We could also have other 
 apartment buildings, but maybe they use different number systems for their apartments
 and therefore Unit A would not be needed. 
 
 # Many-to-many Relationship
-![many-to-many-relationship](../imgs/many-to-many-relationship.png)
+![many-to-many-relationship](/imgs/many-to-many-relationship.png)
 
 # Reflection
 
